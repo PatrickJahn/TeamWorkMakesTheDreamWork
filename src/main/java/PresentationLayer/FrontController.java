@@ -32,9 +32,17 @@ public class FrontController extends HttpServlet {
     protected void processRequest( HttpServletRequest request, HttpServletResponse response )
             throws ServletException, IOException {
         try {
-            Command action = Command.from( request );
-            String view = action.execute( request, response );
-            request.getRequestDispatcher( "/WEB-INF/" + view + ".jsp" ).forward( request, response );
+        System.out.println(request.getParameter("taget"));
+            if (request.getParameter("taget").equalsIgnoreCase("Vis")) {
+
+                request.getRequestDispatcher( "/WEB-INF/oversigt.jsp").forward( request, response );
+            } else {
+
+
+                Command action = Command.from(request);
+                String view = action.execute(request, response);
+                request.getRequestDispatcher("/WEB-INF/" + view + ".jsp").forward(request, response);
+            }
         } catch ( LoginSampleException ex ) {
             request.setAttribute( "error", ex.getMessage() );
             request.getRequestDispatcher( "index.jsp" ).forward( request, response );

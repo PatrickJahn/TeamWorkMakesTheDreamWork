@@ -23,7 +23,7 @@
         <br>
 
         <form name="OversigtKunder" action="FrontController" method="POST">
-            <input type="hidden" name="target" value="Vis">
+            <input type="hidden" name="taget" value="Vis">
             <input type="submit" value="Gå til oversigt">
         </form>
 

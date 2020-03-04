@@ -6,11 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="prejektSkabelon" />
         <module name="ProjektSkabelon-master" />
         <module name="Projektskabelon-master" />
         <module name="Projektskabelon-Employee" />
         <module name="Projektskabelon" />
+=======
+        <module name="Projektskabelon-Employee" />
+        <module name="Projektskabelon" />
+        <module name="ProjektSkabelon-master" />
+        <module name="prejektSkabelon" />
+        <module name="TeamWorkMakesTheDreamWork" />
+        <module name="Projektskabelon-master" />
+>>>>>>> 51fdc9c37e262ca239d65cc0e0c8d64deff41583
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +29,7 @@
       <module name="Projektskabelon" options="-endorseddirs &quot;$PROJECT_DIR$/target/endorsed&quot;" />
       <module name="Projektskabelon-Employee" options="-endorseddirs C:\Users\Benjamin\Desktop\Git\TeamWorkMakesTheDreamWork\target/endorsed" />
       <module name="Projektskabelon-master" options="-endorseddirs $PROJECT_DIR$/target/endorsed" />
+      <module name="TeamWorkMakesTheDreamWork" options="-endorseddirs $PROJECT_DIR$/target/endorsed" />
       <module name="prejektSkabelon" options="-endorseddirs &quot;$PROJECT_DIR$/target/endorsed&quot;" />
     </option>
   </component>
