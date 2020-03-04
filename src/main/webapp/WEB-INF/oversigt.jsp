@@ -17,7 +17,7 @@
 
 <p>Dette er oversigt over vores kunder:</p>
 
-      <c:forEach var = "i" items="${Usermapper.getUserArray()}">
+      <c:forEach var = "i" items="${UserMapper.getUserArray()}">
          Item <c:out value = "${i}"/><p>
       </c:forEach>
 
