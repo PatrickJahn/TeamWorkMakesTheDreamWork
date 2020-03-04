@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 /**
  The purpose of UserMapper is to...
@@ -55,5 +56,25 @@ public class UserMapper {
             throw new LoginSampleException(ex.getMessage());
         }
     }
+
+    public static ArrayList<String> getUserArray() throws LoginSampleException {
+
+        try {
+            Connection con = Connector.connection();
+            String SQL = "SELECT email FROM users WHERE role=\"customer\"";
+            PreparedStatement ps = con.prepareStatement( SQL );
+            ResultSet rs = ps.executeQuery();
+            ArrayList<String> xs = new ArrayList<String>();
+
+            while (rs.next()) {
+                xs.add(rs.getString("email"));
+            }
+
+
+        } catch ( ClassNotFoundException | SQLException ex ) {
+            throw new LoginSampleException(ex.getMessage());
+        }
+    }
+
 
 }
