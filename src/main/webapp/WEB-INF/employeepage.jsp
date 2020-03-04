@@ -19,5 +19,25 @@
 
 
         You are now logged in as a EMPLOYEE of our wonderful site.
+        <br>
+        <br>
+
+        <form name="OversigtKunder" action="FrontController" method="POST">
+            <input type="hidden" name="target" value="Vis">
+            <input type="submit" value="Gå til oversigt">
+        </form>
+
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
